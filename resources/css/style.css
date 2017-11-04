@@ -4,6 +4,7 @@ html {
 
 body {
     font-family: Helvetica, Arial, sans-serif;
+    box-sizing: border-box;
 }
 
 h1 {
@@ -68,11 +69,65 @@ h1 {
 
 .navbar ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0.75rem 0;
 }
 
 .navbar ul a {
     color: white;
     text-decoration: none;
+}
+
+.item {    
+    width: 30%;
+}
+
+.item div {
+    display: flex;
+    border: 4px solid black;
+}
+
+.item img {
+    margin: auto auto;
+    max-height: 9rem;
+    max-width: 50%;
+    padding: 2rem;
+}
+
+.item p {
+    background-color: black;
+    text-align: center;
+    padding: 0.5rem 0;
+    color: white;
+}
+
+.row {
+    display: flex;
+    margin-top: 3rem;
+    justify-content: space-between;
+}
+
+.contact_header {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    background-color: black;
+    color: white;
+}
+
+.contact_info {
+    width: 35%;
+    margin-bottom: 4rem;
+}
+
+footer {
+    color: white;
+    background-color: black;
+}
+
+footer .container {
+    min-height: 5rem;
+    display: flex;
+    text-align: left;
+    align-items: center;
 }
